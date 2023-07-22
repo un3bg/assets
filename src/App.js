@@ -1,14 +1,15 @@
 import './App.css'
-import { useState } from 'react'
-// import Landing from './comps/landing'
+import { useEffect, useState, useRef } from 'react'
+import React from 'react';
+import Clock from '../assets/clock.jsx'
+
+
 
 let App = () => {
-  const [name , setName] = useState('unes')
-  return (
-    <div className='App'>
-      <h1>Hello {name}</h1>
-      <button onClick={()=>{setName('Amir')}}>click</button>
-    </div>
+  return(
+    <React.Fragment>
+      <Clock />
+    </React.Fragment>
   )
 }
 
